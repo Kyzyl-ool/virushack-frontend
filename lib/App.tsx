@@ -5,12 +5,14 @@ import { Box } from '@material-ui/core';
 import { RootStore } from 'store/reducers';
 import { ProceduresPage } from 'pages/ProceduresPage';
 import './App.less';
+import TokenProvider from 'components/tokenProvider';
 
 export const GlobalStoreContext = React.createContext(RootStore);
 
 function App() {
   return (
     <BrowserRouter>
+      <TokenProvider />
       <GlobalStoreContext.Provider value={RootStore}>
         <Box width={'100vw'} height={'100vh'}>
           <Switch>

@@ -21,5 +21,6 @@
   "start_url": "/virushack-frontend",
   "display": "standalone",
   "theme_color": "#FFFFFF",
-  "background_color": "#209CEE"
+  "background_color": "#209CEE",
+  "gcm_sender_id": "103953800507"
 }

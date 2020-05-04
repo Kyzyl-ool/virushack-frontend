@@ -93,7 +93,9 @@ module.exports = {
       favicon: './public/favicon.ico'
     }),
     new CopyWebpackPlugin([{ from: './public/icons', to: 'public/icons' }]),
+    new CopyWebpackPlugin([{ from: './public/firebase-messaging-sw.js', to: 'firebase-messaging-sw.js' }]),
     new CopyWebpackPlugin([{ from: './public/manifest.json', to: 'public/manifest.json' }]),
+    new CopyWebpackPlugin([{ from: './public/manifest.json', to: 'manifest.json' }]),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: 'app.css' }),
     new webpack.DefinePlugin(envKeys),
