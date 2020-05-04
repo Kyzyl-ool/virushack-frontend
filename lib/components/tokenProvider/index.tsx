@@ -1,5 +1,6 @@
 import React from 'react';
 import { messaging } from '../../init-fcm';
+import axios from 'axios';
 
 class TokenProvider extends React.Component<any, any> {
   async componentDidMount() {
@@ -9,6 +10,13 @@ class TokenProvider extends React.Component<any, any> {
         const token = await messaging.getToken();
         // TODO add sending token to BE
         console.log(token);
+        axios
+          .post('https://bc5b34b7.ngrok.io/api/user', {
+            tokenId: token
+          })
+          .then(value => {
+            console.log(value.data);
+          });
       })
       .catch(function(err) {
         console.log('Unable to get permission to notify.', err);

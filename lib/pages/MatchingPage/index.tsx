@@ -47,7 +47,7 @@ export const MatchingPage: React.FC = props => {
       <div className="matching-page__button-container">
         <div style={{ height: '32px', display: 'flex', justifyContent: 'center' }}>
           {link && (
-            <a target="_blank" href={link}>
+            <a target="_blank" rel="noopener noreferrer" href={link}>
               Подключиться к чату
             </a>
           )}
