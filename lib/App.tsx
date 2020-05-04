@@ -4,7 +4,7 @@ import { StartPage } from 'pages/StartPage';
 import { Box } from '@material-ui/core';
 import { RootStore } from 'store/reducers';
 import { ProceduresPage } from 'pages/ProceduresPage';
-import './App.scss';
+import './App.less';
 
 export const GlobalStoreContext = React.createContext(RootStore);
 
