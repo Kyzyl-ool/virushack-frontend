@@ -22,7 +22,7 @@ module.exports = {
     main: './lib/index.tsx'
   },
   output: {
-    publicPath: '/',
+    publicPath: '/virushack-frontend',
     path: __dirname + '/dist',
     filename: '[name].[hash].js'
   },
