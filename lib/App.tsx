@@ -7,6 +7,7 @@ import { ProceduresPage } from 'pages/ProceduresPage';
 import './App.less';
 import TokenProvider from 'components/tokenProvider';
 import { SymptomsPage } from 'pages/SymptomsPage';
+import { MatchingPage } from 'pages/MatchingPage';
 
 export const GlobalStoreContext = React.createContext(RootStore);
 
@@ -17,6 +18,9 @@ function App() {
       <GlobalStoreContext.Provider value={RootStore}>
         <Box width={'100vw'} height={'100vh'}>
           <Switch>
+            <Route path="/matching">
+              <MatchingPage />
+            </Route>
             <Route exact path="/">
               <StartPage />
             </Route>
