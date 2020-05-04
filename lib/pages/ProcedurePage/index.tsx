@@ -38,7 +38,7 @@ export const ProcedurePage: React.FC = props => {
           onCancel={() => setShowModal(false)}
           onOk={() => setShowModal(false)}
         >
-          <iframe src="http://35.222.222.35/pdf/feed.pdf" width="100%" height={'300px'} />
+          <iframe src="http://35.222.222.35/pdf/feed.pdf" width="100%" height={'300px'}></iframe>
         </Modal>
       </Box>
     </>
