@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "https://kyzyl-ool.github.io/virushack-frontend",
   "display": "standalone",
   "theme_color": "#FFFFFF",
   "background_color": "#209CEE"
