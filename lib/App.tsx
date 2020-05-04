@@ -4,7 +4,7 @@ import { StartPage } from 'pages/StartPage';
 import { Box } from '@material-ui/core';
 import { ProceduresPage } from 'pages/ProceduresPage';
 import './App.less';
-import TokenProvider from 'components/tokenProvider';
+// import TokenProvider from 'components/tokenProvider';
 import { SymptomsPage } from 'pages/SymptomsPage';
 import { MatchingPage } from 'pages/MatchingPage';
 import { ProcedurePage } from 'pages/ProcedurePage';
@@ -12,7 +12,7 @@ import { ProcedurePage } from 'pages/ProcedurePage';
 function App() {
   return (
     <BrowserRouter>
-      <TokenProvider />
+      {/*<TokenProvider />*/}
       <Box width={'100vw'} height={'100vh'}>
         <Switch>
           <Route path="/procedure/17">
