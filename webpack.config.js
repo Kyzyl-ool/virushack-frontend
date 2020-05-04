@@ -33,13 +33,6 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 3000,
-    proxy: {
-      '/api': {
-        target: 'http://tt-ridesharing-backend.herokuapp.com',
-        pathRewrite: { '^/api': '' },
-        changeOrigin: true
-      }
-    }
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.svg', '.ico', '.png', '.scss'],
@@ -77,7 +70,14 @@ module.exports = {
             }
           }
         ]
-      }
+      },
+      {
+        test: /\.less$/,
+        loader: 'less-loader', // compiles Less to CSS
+        options: {
+          javascriptEnabled: true
+        }
+      },
     ]
   },
   plugins: [
