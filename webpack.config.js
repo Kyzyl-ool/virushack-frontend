@@ -28,6 +28,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    disableHostCheck: true,
     inline: true,
     hot: true,
     contentBase: path.join(__dirname, 'dist'),
