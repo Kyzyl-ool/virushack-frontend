@@ -194,6 +194,7 @@ export const ProceduresPage: React.FC = props => {
             Благодарим вас за использование приложения! Мы будем напоминать вас о всех необходимых процедурах в
             push-уведомлениях.
           </Text>
+          <br />
           <Button type={'primary'} size={'large'} onClick={() => history.push('/')}>
             Завершить
           </Button>

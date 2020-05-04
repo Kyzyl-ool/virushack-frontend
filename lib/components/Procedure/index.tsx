@@ -32,7 +32,7 @@ export const Procedure: React.FC<IProcedureItem> = props => {
         onCancel={() => setShowModal(false)}
         onOk={() => setShowModal(false)}
       >
-        <iframe src="http://35.222.222.35/pdf/pain.pdf" width="100%" height={'300px'} />
+        <iframe src="http://35.222.222.35/pdf/traheostom.pdf" width="100%" height={'300px'} />
       </Modal>
     </>
   );
