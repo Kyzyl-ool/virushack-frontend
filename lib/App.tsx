@@ -7,6 +7,7 @@ import './App.less';
 import TokenProvider from 'components/tokenProvider';
 import { SymptomsPage } from 'pages/SymptomsPage';
 import { MatchingPage } from 'pages/MatchingPage';
+import { ProcedurePage } from 'pages/ProcedurePage';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <TokenProvider />
       <Box width={'100vw'} height={'100vh'}>
         <Switch>
+          <Route path="/procedure/17">
+            <ProcedurePage />
+          </Route>
           <Route path="/matching">
             <MatchingPage />
           </Route>
