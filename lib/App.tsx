@@ -6,6 +6,7 @@ import { RootStore } from 'store/reducers';
 import { ProceduresPage } from 'pages/ProceduresPage';
 import './App.less';
 import TokenProvider from 'components/tokenProvider';
+import { SymptomsPage } from 'pages/SymptomsPage';
 
 export const GlobalStoreContext = React.createContext(RootStore);
 
@@ -19,7 +20,9 @@ function App() {
             <Route exact path="/">
               <StartPage />
             </Route>
-            <Route path="/relative">Relative page</Route>
+            <Route path="/relative">
+              <SymptomsPage />
+            </Route>
             <Route path="/ward">Ward page</Route>
             <Route path="/nurse">
               <ProceduresPage />
