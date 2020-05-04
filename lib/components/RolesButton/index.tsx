@@ -23,7 +23,7 @@ export const RolesButtons: React.FC = props => {
         </Button>
       </Box>
       <Box mt={1}>
-        <Button type="primary" size={'large'} block onClick={() => onClick('/nurse/1')}>
+        <Button type="primary" size={'large'} block onClick={() => onClick('/nurse/0')}>
           Сиделка
         </Button>
       </Box>
