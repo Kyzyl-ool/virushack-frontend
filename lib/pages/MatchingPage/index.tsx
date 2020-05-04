@@ -1,5 +1,5 @@
-import React from 'react';
-import { Typography, Radio, Select, Button } from 'antd';
+import React, { useState } from 'react';
+import { Typography, Radio, Select, Button, Input } from 'antd';
 import './MatchingPage.scss';
 
 const { Title, Text } = Typography;
@@ -17,6 +17,8 @@ const diseases: string[] = [
 ];
 
 export const MatchingPage: React.FC = props => {
+  const [link, setLink] = useState(null);
+
   return (
     <div className="matching-page__container">
       <div className="matching-page__selector-container">
@@ -41,8 +43,16 @@ export const MatchingPage: React.FC = props => {
           </Select>
         </div>
       </div>
+
       <div className="matching-page__button-container">
-        <Button type="primary" size={'large'} block>
+        <div style={{ height: '32px', display: 'flex', justifyContent: 'center' }}>
+          {link && (
+            <a target="_blank" href={link}>
+              Подключиться к чату
+            </a>
+          )}
+        </div>
+        <Button type="primary" size={'large'} block onClick={() => setLink('tg://join?invite=Juz3ZxvR0bWO9uGd8wnRRQ')}>
           Получить ссылку на чат
         </Button>
       </div>
