@@ -169,11 +169,13 @@ export const ProceduresPage: React.FC = props => {
               </List.Item>
             )}
           >
-            {/*<List.Item>*/}
-            {/*  <Button type={'primary'} size={'small'}>*/}
-            {/*    Добавить еще одну процедуру*/}
-            {/*  </Button>*/}
-            {/*</List.Item>*/}
+            <List.Item>
+              {answers.length > 0 ? (
+                <Button type={'primary'} size={'large'} ghost disabled block>
+                  Добавить еще одну процедуру
+                </Button>
+              ) : null}
+            </List.Item>
           </List>
           <Button size={'large'} type={'primary'} onClick={subscribeToProcedures}>
             Далее
@@ -188,6 +190,10 @@ export const ProceduresPage: React.FC = props => {
           </Modal>
         </Route>
         <Route path={'/nurse/3'}>
+          <Text>
+            Благодарим вас за использование приложения! Мы будем напоминать вас о всех необходимых процедурах в
+            push-уведомлениях.
+          </Text>
           <Button type={'primary'} size={'large'} onClick={() => history.push('/')}>
             Завершить
           </Button>

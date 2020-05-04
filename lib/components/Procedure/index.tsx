@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { frequencyToString, IProcedureItem } from 'pages/ProceduresPage';
-import { Card, Menu, Tag, Typography, Button, Divider, Modal } from 'antd';
-import { PlusOutlined } from '@ant-design/icons/lib';
-import { Document, Page } from 'react-pdf';
+import { Menu, Tag, Typography, Button, Modal } from 'antd';
 
 const { Text } = Typography;
 
@@ -34,7 +32,7 @@ export const Procedure: React.FC<IProcedureItem> = props => {
         onCancel={() => setShowModal(false)}
         onOk={() => setShowModal(false)}
       >
-        <Document file={'pdf/pain.pdf'} />
+        <iframe src="http://35.222.222.35/pdf/pain.pdf" width="100%" height={'300px'} />
       </Modal>
     </>
   );
