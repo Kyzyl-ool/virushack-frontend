@@ -11,13 +11,17 @@ class TokenProvider extends React.Component<any, any> {
         // TODO add sending token to BE
         console.log(token);
         axios
-          .post('https://bc5b34b7.ngrok.io/api/user', {
-            tokenId: token
-          }, {
-            headers: {
-              "Access-Control-Allow-Origin": "*"
+          .post(
+            'https://bc5b34b7.ngrok.io/api/user',
+            {
+              tokenId: token
+            },
+            {
+              headers: {
+                'Access-Control-Allow-Origin': '*'
+              }
             }
-          })
+          )
           .then(value => {
             console.log(value.data);
           });
