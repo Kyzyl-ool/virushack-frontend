@@ -8,6 +8,7 @@ import TokenProvider from 'components/tokenProvider';
 import { SymptomsPage } from 'pages/SymptomsPage';
 import { MatchingPage } from 'pages/MatchingPage';
 import { ProcedurePage } from 'pages/ProcedurePage';
+import { DiaryPage } from 'pages/DiaryPage';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
           <Route path="/ward">Ward page</Route>
           <Route path="/nurse">
             <ProceduresPage />
+          </Route>
+          <Route path={'/diary'}>
+            <DiaryPage />
           </Route>
         </Switch>
       </Box>
